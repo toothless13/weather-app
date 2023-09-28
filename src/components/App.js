@@ -1,11 +1,11 @@
 import "../styles/App.css";
+import LocationDetails from "./LocationDetails";
 
-function App() {
+function App({ location }) {
+  const { city, country } = location;
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather App</h1>
-      </header>
+      <LocationDetails city={city} country={country} />
     </div>
   );
 }
