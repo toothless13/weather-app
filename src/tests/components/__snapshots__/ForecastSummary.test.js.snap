@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForecastSummary component Renders a div 1`] = `
+exports[`ForecastSummary component Renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="forecast-summary"
@@ -12,6 +12,7 @@ exports[`ForecastSummary component Renders a div 1`] = `
     </div>
     <div
       class="forecast-summary__icon"
+      data-testid="forecast-icon"
     >
       stubIcon
     </div>
