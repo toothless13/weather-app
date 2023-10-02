@@ -1,8 +1,6 @@
 import ForecastSummary from "./ForecastSummary";
 
 const ForecastSummaries = ({ forecasts }) => {
-  // const { date, description, icon, temperature} = props;
-  // console.log(forecasts);
   return (
     <div className="forecast-summaries">
       {forecasts.map((forecast) => {
