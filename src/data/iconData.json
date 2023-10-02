@@ -1,0 +1,8 @@
+{
+  "200": "http://openweathermap.org/img/wn/11d@2x.png",
+  "300": "http://openweathermap.org/img/wn/09d@2x.png",
+  "500": "http://openweathermap.org/img/wn/10d@2x.png",
+  "600": "http://openweathermap.org/img/wn/13d@2x.png",
+  "700": "http://openweathermap.org/img/wn/50d@2x.png",
+  "800": "http://openweathermap.org/img/wn/01d@2x.png"
+}
