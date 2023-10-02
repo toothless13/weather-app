@@ -1,4 +1,5 @@
 import ForecastSummary from "./ForecastSummary";
+import "../styles/ForecastSummaries.css";
 
 const ForecastSummaries = ({ forecasts }) => {
   return (
