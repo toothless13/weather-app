@@ -17,6 +17,7 @@ exports[`ForecastSummary component Renders correctly 1`] = `
     >
       <img
         alt="icon showing weather code"
+        src="http://openweathermap.org/img/wn/01d@2x.png"
       />
     </div>
     <div
