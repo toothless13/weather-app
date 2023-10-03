@@ -33,6 +33,7 @@ exports[`ForecastDetails component Renders correctly 1`] = `
     </div>
     <div
       class="forecast-details__wind-direction"
+      data-testid="forecast-details__wind-direction"
     >
       ne
     </div>

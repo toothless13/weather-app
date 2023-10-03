@@ -10,7 +10,7 @@ const ForecastDetails = (props) => {
       <div className="forecast-details__max-temp">{maxTemp}</div>
       <div className="forecast-details__humidity">{humidity}</div>
       <div className="forecast-details__wind-speed">{windSpeed}</div>
-      <div className="forecast-details__wind-direction">{windDirection}</div>
+      <div className="forecast-details__wind-direction" data-testid="forecast-details__wind-direction">{windDirection}</div>
     </div>
   );
 };
