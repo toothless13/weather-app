@@ -1,5 +1,7 @@
 const ForecastDetails = (props) => {
-  const { date, temperature, humidity, wind } = props;
+  const { forecasts } = props;
+  const { date, temperature, humidity, wind } = forecasts;
+
   const formattedDate = new Date(date).toDateString();
   const { min: minTemp, max: maxTemp } = temperature;
   const { speed: windSpeed, direction: windDirection } = wind;
@@ -10,7 +12,12 @@ const ForecastDetails = (props) => {
       <div className="forecast-details__max-temp">{maxTemp}</div>
       <div className="forecast-details__humidity">{humidity}</div>
       <div className="forecast-details__wind-speed">{windSpeed}</div>
-      <div className="forecast-details__wind-direction" data-testid="forecast-details__wind-direction">{windDirection}</div>
+      <div
+        className="forecast-details__wind-direction"
+        data-testid="forecast-details__wind-direction"
+      >
+        {windDirection}
+      </div>
     </div>
   );
 };

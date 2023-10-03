@@ -5,39 +5,31 @@ import ForecastDetails from "../../components/ForecastDetails";
 
 describe("ForecastDetails component", () => {
   const validProps = {
-    date: 1111111,
-    temperature: {
-      min: 12,
-      max: 22,
-    },
-    humidity: 80,
-    wind: {
-      speed: 60,
-      direction: "ne",
+    forecasts: {
+      date: 1111111,
+      temperature: {
+        min: 12,
+        max: 22,
+      },
+      humidity: 80,
+      wind: {
+        speed: 60,
+        direction: "ne",
+      },
     },
   };
 
+  const { forecasts } = validProps;
+
   it("Renders correctly", () => {
-    const { asFragment } = render(
-      <ForecastDetails
-        date={validProps.date}
-        temperature={validProps.temperature}
-        humidity={validProps.humidity}
-        wind={validProps.wind}
-      />,
-    );
+    const { asFragment } = render(<ForecastDetails forecasts={forecasts} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders correct values for props", () => {
     const { getByText, getByTestId } = render(
-      <ForecastDetails
-        date={validProps.date}
-        temperature={validProps.temperature}
-        humidity={validProps.humidity}
-        wind={validProps.wind}
-      />,
+      <ForecastDetails forecasts={forecasts} />,
     );
 
     expect(getByText("Thu Jan 01 1970")).toHaveAttribute(

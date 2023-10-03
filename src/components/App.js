@@ -1,4 +1,5 @@
 import "../styles/App.css";
+import ForecastDetails from "./ForecastDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import LocationDetails from "./LocationDetails";
 
@@ -8,6 +9,7 @@ const App = ({ location, forecasts }) => {
     <div className="weather-app">
       <LocationDetails city={city} country={country} />
       <ForecastSummaries forecasts={forecasts} />
+      <ForecastDetails forecasts={forecasts[0]} />
     </div>
   );
 };
