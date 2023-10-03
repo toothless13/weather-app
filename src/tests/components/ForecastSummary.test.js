@@ -28,7 +28,6 @@ describe("ForecastSummary component", () => {
   });
 
   it("renders correct values for props", () => {
-    // const { date, description, icon, temperature } = validProps;
     const { getByText, getByTestId } = render(
       <ForecastSummary
         date={validProps.date}
@@ -38,7 +37,7 @@ describe("ForecastSummary component", () => {
       />,
     );
 
-    expect(getByText("1111111")).toHaveAttribute(
+    expect(getByText("Thu Jan 01 1970")).toHaveAttribute(
       "class",
       "forecast-summary__date",
     );
