@@ -12,6 +12,7 @@ describe("ForecastSummary component", () => {
       min: 12,
       max: 22,
     },
+    onSelect: () => {},
   };
 
   it("Renders correctly", () => {
@@ -21,6 +22,7 @@ describe("ForecastSummary component", () => {
         description={validProps.description}
         icon={validProps.icon}
         temperature={validProps.temperature}
+        onSelect={validProps.onSelect}
       />,
     );
 
