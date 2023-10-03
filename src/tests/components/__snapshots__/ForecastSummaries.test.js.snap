@@ -32,6 +32,11 @@ exports[`ForecastSummaries component renders correctly 1`] = `
       >
         Stub description
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -60,6 +65,11 @@ exports[`ForecastSummaries component renders correctly 1`] = `
       >
         Stub description 2
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -88,6 +98,11 @@ exports[`ForecastSummaries component renders correctly 1`] = `
       >
         Stub description 3
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
   </div>
 </DocumentFragment>

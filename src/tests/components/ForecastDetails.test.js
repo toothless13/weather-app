@@ -36,19 +36,19 @@ describe("ForecastDetails component", () => {
       "class",
       "forecast-details__date",
     );
-    expect(getByText("12")).toHaveAttribute(
+    expect(getByText(/12/i)).toHaveAttribute(
       "class",
       "forecast-details__min-temp",
     );
-    expect(getByText("22")).toHaveAttribute(
+    expect(getByText(/22/i)).toHaveAttribute(
       "class",
       "forecast-details__max-temp",
     );
-    expect(getByText("80")).toHaveAttribute(
+    expect(getByText(/80/i)).toHaveAttribute(
       "class",
       "forecast-details__humidity",
     );
-    expect(getByText("60")).toHaveAttribute(
+    expect(getByText(/60/i)).toHaveAttribute(
       "class",
       "forecast-details__wind-speed",
     );

@@ -14,28 +14,28 @@ exports[`ForecastDetails component Renders correctly 1`] = `
     <div
       class="forecast-details__min-temp"
     >
-      12
+      Minimum Temperature: 12°C
     </div>
     <div
       class="forecast-details__max-temp"
     >
-      22
+      Maximum Temperature: 22°C
     </div>
     <div
       class="forecast-details__humidity"
     >
-      80
+      Humidity: 80
     </div>
     <div
       class="forecast-details__wind-speed"
     >
-      60
+      Wind Speed: 60
     </div>
     <div
       class="forecast-details__wind-direction"
       data-testid="forecast-details__wind-direction"
     >
-      ne
+      Wind Direction: ne
     </div>
   </div>
 </DocumentFragment>
