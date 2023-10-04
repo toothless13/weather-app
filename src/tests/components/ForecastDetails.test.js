@@ -5,7 +5,7 @@ import ForecastDetails from "../../components/ForecastDetails";
 
 describe("ForecastDetails component", () => {
   const validProps = {
-    forecasts: {
+    forecast: {
       date: 1111111,
       temperature: {
         min: 12,
@@ -19,17 +19,15 @@ describe("ForecastDetails component", () => {
     },
   };
 
-  const { forecasts } = validProps;
-
   it("Renders correctly", () => {
-    const { asFragment } = render(<ForecastDetails forecasts={forecasts} />);
+    const { asFragment } = render(<ForecastDetails forecast={validProps} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders correct values for props", () => {
     const { getByText, getByTestId } = render(
-      <ForecastDetails forecasts={forecasts} />,
+      <ForecastDetails forecast={validProps} />,
     );
 
     expect(getByText("Thu Jan 01 1970")).toHaveAttribute(

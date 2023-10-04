@@ -11,7 +11,7 @@ const ForecastSummaries = ({ forecasts, onForecastSelect }) => {
             key={date}
             date={date}
             description={description}
-            icon={icon}
+            icon={icon.toString()}
             temperature={temperature}
             onSelect={onForecastSelect}
           />

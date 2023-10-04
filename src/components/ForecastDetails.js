@@ -1,6 +1,7 @@
 const ForecastDetails = (props) => {
-  const { forecasts } = props;
-  const { date, temperature, humidity, wind } = forecasts;
+  console.log(props);
+  const { forecast } = props;
+  const { date, temperature, humidity, wind } = forecast;
 
   const formattedDate = new Date(date).toDateString();
   const { min: minTemp, max: maxTemp } = temperature;
