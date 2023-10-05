@@ -1,5 +1,4 @@
 const ForecastDetails = (props) => {
-  console.log(props);
   const { forecast } = props;
   const { date, temperature, humidity, wind } = forecast;
 
