@@ -5,17 +5,15 @@ import ForecastDetails from "../../components/ForecastDetails";
 
 describe("ForecastDetails component", () => {
   const validProps = {
-    forecast: {
-      date: 1111111,
-      temperature: {
-        min: 12,
-        max: 22,
-      },
-      humidity: 80,
-      wind: {
-        speed: 60,
-        direction: "ne",
-      },
+    date: 1111111,
+    temperature: {
+      min: 12,
+      max: 22,
+    },
+    humidity: 80,
+    wind: {
+      speed: 60,
+      direction: "ne",
     },
   };
 

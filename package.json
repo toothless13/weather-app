@@ -30,6 +30,12 @@
     "eject": "react-scripts eject",
     "lint:fix": "npx eslint ./src --ext .js --fix"
   },
+  "jest": {
+    "transform": {
+        "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": ["<rootDir>/node_modules/(?!axios)/"]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
