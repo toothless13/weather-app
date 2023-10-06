@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import axios from "axios";
 
 const getForecast = async (
@@ -5,6 +6,7 @@ const getForecast = async (
   setForecasts,
   setLocation,
   searchText,
+  setErrorMessage,
 ) => {
   let endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
   let endpointBU = "https://cmd-shift-weather-app-alt.onrender.com/forecast";
@@ -18,9 +20,17 @@ const getForecast = async (
     setSelectedDate(data.forecasts[0].date);
     setLocation(data.location);
     setForecasts(data.forecasts);
+    setErrorMessage("");
   } catch (error) {
-    // eslint-disable-next-line no-console
-    console.log(error);
+    const { status } = error.response;
+    if (status === 404) {
+      setErrorMessage("No such town or city, please try again!");
+      console.error("Location is not valid", error);
+    }
+    if (status === 500) {
+      setErrorMessage("There was a server error, please try again later!");
+      console.error("Server error", error);
+    }
   }
 };
 
