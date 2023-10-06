@@ -2,7 +2,6 @@ const SearchForm = ({ searchText, setSearchText, onSubmit }) => {
   const handleInputChange = (event) => {
     setSearchText(event.target.value);
   };
-  console.log(searchText);
 
   return (
     <div className="search-form">
